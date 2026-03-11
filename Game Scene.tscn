@@ -2,9 +2,17 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_jf6rt"]
 
+[sub_resource type="Gradient" id="Gradient_jf6rt"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.3554217, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_qo16k"]
+gradient = SubResource("Gradient_jf6rt")
+
 [node name="GameScene" type="Node2D" unique_id=1033577044]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=2089447339]
-position = Vector2(538.00006, 346.00003)
+position = Vector2(575, 324.00003)
 scale = Vector2(1149.5, 646.5)
 mesh = SubResource("BoxMesh_jf6rt")
+texture = SubResource("GradientTexture2D_qo16k")
